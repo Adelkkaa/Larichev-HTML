@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1 class="title">Свяжитесь со мной</h1>
+        <div class="form-container">
+          <label class="field">
+            <svg class="field-icon">
+              <use xlink:href="./assets/images/message.svg#message"></use>
+            </svg>
+            <span>Email<sup>*</sup></span
+            ><input
+              required
+              class="field-input"
+              type="email"
+              placeholder="Введите email"
+              name="email"
+            />
+          </label>
+
+          <label class="field">
+            <svg class="field-icon">
+              <use xlink:href="./assets/images/telegram.svg#telegram"></use>
+            </svg>
+
+            <span>Telegram<sup>*</sup></span
+            ><input
+              required
+              class="field-input"
+              type="email"
+              placeholder="Введите email"
+              name="email"
+            />
+          </label>
+          <label class="field">
+            <svg class="field-icon">
+              <use xlink:href="./assets/images/topic.svg#topic"></use>
+            </svg>
+
+            <span>Тема<sup>*</sup></span
+            ><select required class="field-select">
+              <option value="1" selected>Приобретение курсов</option>
+              <option value="2">Технические вопросы</option>
+              <option value="3">Связь с администратором</option>
+              <option value="4">Прочие вопросы</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Комментарий</span>
+            <textarea
+              class="field-textarea"
+              name="comment"
+              cols="30"
+              rows="20"
+            ></textarea>
+          </label>
+          <button>Отправить</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
