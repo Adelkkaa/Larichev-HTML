@@ -1,0 +1,165 @@
+@import url("./reset.css");
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --gray-color: #f0f0f0;
+  --gray-dark-color: #9b99af;
+  --blue-dark-color: #050038;
+  --blue-light-color: #4262ff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid var(--gray-color);
+  margin-bottom: 50px;
+}
+
+h1,
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+  color: var(--blue-dark-color);
+}
+
+h1 {
+  margin: 0 0 17px 0;
+}
+
+h2 {
+  margin: 60px 0 19px 0;
+}
+
+nav {
+  padding: 33px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+  padding: 0;
+}
+
+nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-bottom: 140px;
+}
+
+footer {
+	background: #050038;
+	padding: 47px 40px;
+	color: white;
+}
+
+footer > div {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	padding: 0 40px;
+	gap: 20px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+#hero {
+  display: flex;
+  gap: 65px;
+}
+
+.heroText {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--blue-dark-color-color);
+}
+
+.heroForm {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heroForm + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #050038;
+  margin: 8px 0 52px 0;
+}
+
+#email {
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid var(--gray-dark-color);
+  padding: 10px 20px;
+}
+
+
+#heroButton {
+  cursor: pointer;
+  height: 48px;
+  border-radius: 32px;
+  outline: none;
+  border: 1px solid var(--blue-light-color);
+  padding: 10px 20px;
+  background-color: var(--blue-light-color);
+  color: var(--white-color);
+  transition: background-color 0.5s ease-in-out;
+}
+#heroButton:hover {
+  background-color: var(--blue-dark-color);
+}
+
+.heroLogos {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 47px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+	color: #4262FF;
+	text-decoration: underline;
+}
+
+.link:hover {
+	color: #122db6;
+}
+
+.sectionList {
+	list-style: none;
+	/* list-style: url('../images/check.svg'); */
+}
+
+.sectionList li::marker {
+	content: url('../images/check.svg');
+}
+
+.section {
+	display: flex;
+	gap: 100px;
+}
+
+.section-reverse {
+	flex-direction: row-reverse;
+}
