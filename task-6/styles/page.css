@@ -31,6 +31,90 @@
   gap: 32px;
 }
 
+.button-more {
+  text-align: center;
+}
+
+.chip_wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  overflow: scroll;
+  margin-right: -24px;
+  margin-left: -24px;
+  padding-left: 24px;
+  scrollbar-width: none;
+}
+
+.chip_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.courses_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 70px;
+}
+
+.trust-wrapper {
+  display: grid;
+  grid-template-columns: [start] repeat(3, 1fr) [end];
+  gap: 0 75px;
+}
+
+.trust-wrapper__top {
+  grid-column: start / end;
+}
+
+.trust-wrapper__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.trust-wrapper__num {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 120%;
+
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.trust-wrapper__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.trust-wrapper__h3 {
+  grid-column: start / end;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
+.trust-wrapper__rating {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.trust-wrapper__rate {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  color: var(--color-text);
+}
+
 @media (max-width: 1200px) {
   .hero {
     flex-direction: column;
@@ -62,6 +146,9 @@
   .hero {
     padding: 0 24px;
   }
+  .trust-wrapper {
+    grid-template-columns: [start] 1fr [end];
+  }
 }
 
 @media (max-width: 480px) {
@@ -69,30 +156,3 @@
     gap: 16px;
   }
 }
-
-.button-more {
-  text-align: center;
-}
-
-
-.chip_wrapper {
-	display: flex;
-	gap: 24px;
-	margin-bottom: 32px;
-	overflow: scroll;
-	margin-right: -24px;
-	margin-left: -24px;
-	padding-left: 24px;
-	scrollbar-width: none;
-}
-
-.chip_wrapper::-webkit-scrollbar {
-	display: none;
-}
-
-.courses_wrapper {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 70px;
-}
-
